@@ -1,0 +1,61 @@
+.sobre {
+    text-align: left;
+    background-color: #002147;
+    padding: 40px;
+}
+
+.sobre__descripcion {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.3rem;
+    
+}
+
+.sobre__titulo {
+    color: #fdf8f0;
+    font-weight: 700;
+    font-size: 2rem;
+    
+    margin-bottom: 20px; 
+
+}
+
+#sobre__titulo{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 10px; 
+    padding: 10px;
+}
+
+#sobre__descripcion{
+    padding: 10px;
+}
+
+
+#Dinamica {
+    color: rgb(220, 143, 0);
+    font-size: 40px;
+    padding-left: 9px;
+}
+
+@media screen and (min-width: 0) {
+    .sobre {
+        padding: 40px;
+    }
+
+    .sobre__titulo,
+    .sobre__descripcion {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sobre {
+        padding: 2.5rem;
+    }
+
+    .sobre__titulo,
+    .sobre__descripcion {
+        text-align: left; 
+    }
+}
