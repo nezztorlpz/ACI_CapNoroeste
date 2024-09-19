@@ -1,0 +1,61 @@
+/* Estilos para la sección de contacto */
+.contact-section {
+    padding: 50px ; /* Espaciado superior e inferior */
+    background-color: #f8f9fa; /* Fondo gris claro para toda la sección */
+}
+
+.contact-section .container {
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    border-radius: 8px; /* Bordes redondeados para el contenedor */
+    padding: 30px; /* Espaciado interno del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para el contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+/* Padding adicional para el texto dentro del contenedor */
+.contact-section h2,
+.contact-section p,
+.contact-section .contact-info li {
+    padding: 10px 0; /* Espaciado superior e inferior */
+}
+
+.contact-address {
+    font-size: 1.2rem; /* Tamaño de fuente para la dirección */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* Relación de aspecto 16:9 */
+    border-radius: 8px; /* Bordes redondeados para el contenedor del mapa */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.contact-info {
+    list-style: none; /* Elimina los puntos por defecto de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+    font-size: 1.1rem; /* Tamaño de fuente para la información de contacto */
+}
+
+.contact-info li {
+    margin-bottom: 15px; /* Espaciado inferior entre elementos */
+}
+
+.contact-info strong {
+    display: inline-block;
+    width: 150px; /* Ancho fijo para la etiqueta */
+    font-weight: bold; /* Negrita para las etiquetas */
+    color: #333; /* Color del texto */
+}
