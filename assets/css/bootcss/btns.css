@@ -1,0 +1,19 @@
+/* CSS personalizado para el botón */
+.btn-custom {
+    background-color: #FFC200; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none; /* Eliminar el borde si es necesario */
+}
+
+.btn-custom:hover {
+    background-color: #0C7ED2; /* Color de fondo del botón cuando se pasa el cursor sobre él */
+    color: #ffffff; /* Color del texto del botón cuando se pasa el cursor sobre él */
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
