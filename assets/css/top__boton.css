@@ -1,0 +1,25 @@
+.scroll__to__top {
+    position: fixed;
+    bottom: 160px;
+    right: 25px;
+    display: block;
+  }
+  
+  #back__to__top {
+    background-color: rgba(236, 112, 11, 0);
+    color: #d14545; 
+    border: none;
+    border-radius: 30px;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+  }
+
+  #back__to__top img{
+    padding-top: 2.5px;
+    padding-bottom: 0px;
+    height: 40px;
+    width: 40px;
+  }
+  
