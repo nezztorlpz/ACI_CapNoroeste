@@ -10,6 +10,7 @@ footer {
 
 .footerLogo {
     margin-bottom: 0px; /* Espacio debajo del logo */
+    padding-top: 10px;
 }
 
 .footerLogo img {

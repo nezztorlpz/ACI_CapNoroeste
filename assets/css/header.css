@@ -30,6 +30,8 @@ a:hover {
 header {
     position: relative;
     padding: 0 2rem;
+    padding-bottom: 15px;
+    padding-top: 10px;
 }
 
 .navbar {
@@ -40,6 +42,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 15px;
 }
 
 .navbar .logo img {

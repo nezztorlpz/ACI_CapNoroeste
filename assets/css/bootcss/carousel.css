@@ -1,7 +1,7 @@
 /* Primer Carrusel: Altura fija */
 .first-carousel .carousel-item {
     width: 100%;
-    height: 600px; /* Ajusta la altura según tus necesidades */
+    height: 600px; /* Ajusta la altura*/
 }
 
 .first-carousel .carousel-item img {
@@ -10,10 +10,10 @@
     object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortar */
 }
 
-/* Responsivo para pantallas más pequeñas */
+
 @media (max-width: 768px) {
     .first-carousel .carousel-item {
-        height: 400px; /* Ajusta la altura para pantallas pequeñas */
+        height: 400px; /* Ajusta la altura  */
     }
 
     .first-carousel .carousel-item img {
@@ -21,7 +21,7 @@
     }
 }
 
-/* Segundo Carrusel: Ajustar al ancho de la pantalla y mantener proporción */
+
 /* Segundo Carrusel: Ajustar al ancho de la pantalla y mantener proporción */
 .second-carousel .carousel-item {
     width: 100%;
@@ -44,7 +44,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen, ajusta la opacidad según sea necesario */
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
     z-index: 1; /* Coloca el overlay debajo del texto pero encima de la imagen */
 }
 

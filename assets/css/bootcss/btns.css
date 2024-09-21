@@ -2,7 +2,7 @@
 .btn-custom {
     background-color: #FFC200; /* Color de fondo del botón */
     color: #ffffff; /* Color del texto del botón */
-    border: none; /* Eliminar el borde si es necesario */
+    border: none; /* Eliminar el borde*/
 }
 
 .btn-custom:hover {
