@@ -11,16 +11,28 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para dar profundidad */
 }
 
-
 /* Estilos para las imágenes */
 .images {
     margin-top: 20px; /* Espacio superior */
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Espacio entre imágenes */
+    justify-content: center; /* Centrar imágenes */
 }
 
 .images img {
-    width: 100%; /* Ocupa el 100% del contenedor */
+    width: 100%; /* Ocupa el 100% del contenedor en dispositivos pequeños */
+    max-width: 600px; /* Limita el ancho máximo */
     height: auto; /* Mantiene la proporción de la imagen */
-    margin-bottom: 10px; /* Espacio entre imágenes */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.images img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Sombra más intensa al pasar el mouse */
 }
 
 /* Estilos para la lista de servicios */
@@ -50,10 +62,116 @@
     cursor: default; /* Cambia el cursor a una flecha estándar */
 }
 
+/* Contenedor para Misión, Visión y Valores */
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    margin: 40px 0;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
 
-/* Ajustes de diseño en dispositivos más pequeños */
+/* Estilos para cada caja de información */
+.info-box {
+    flex: 1 1 30%; /* Flexibilidad para crecer y encogerse */
+    padding: 20px;
+    border-radius: 20px; /* Bordes más ovalados */
+    color: #fff; /* Texto blanco para contraste */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Colores específicos para cada sección */
+.info-box.mision {
+    background-color: #28a745; /* Verde */
+}
+
+.info-box.vision {
+    background-color: #ffc107; /* Amarillo */
+    color: #333; /* Texto oscuro para mejor legibilidad sobre fondo amarillo */
+}
+
+.info-box.valores {
+    background-color: #007bff; /* Azul */
+}
+
+/* Efecto hover */
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Estilos específicos para la lista de Valores */
+.info-box.valores ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-box.valores li {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Estilos para el contenedor de las imágenes de reconocimientos */
+.recognition-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Espacio entre imágenes */
+    justify-content: center; /* Centra las imágenes */
+    margin-top: 20px;
+    padding: 10px; /* Padding alrededor del contenedor */
+}
+
+.recognition-images img {
+    height: 100px; /* Altura fija */
+    object-fit: cover; /* Llenar el contenedor sin dejar espacios en blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recognition-images img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el mouse */
+}
+
+/* Responsividad: una imagen sobre otra en pantallas pequeñas */
+@media (max-width: 768px) {
+    .recognition-images {
+        flex-direction: row; /* Coloca las imágenes en columna */
+        flex-wrap: wrap;
+        gap: 10px; /* Reduce el espacio entre imágenes */
+    }
+
+    .recognition-images img {
+        height: 100px; /* Ajusta la altura de forma proporcional */
+    }
+}
+
+
+/* Responsividad */
 @media (max-width: 768px) {
     .left-column, .right-column {
         padding: 10px; /* Menos padding en pantallas pequeñas */
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    .info-box {
+        flex: 1 1 100%;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images img {
+        max-width: 100%; /* Ocupa todo el ancho disponible */
     }
 }
