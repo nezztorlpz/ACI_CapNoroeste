@@ -3,6 +3,19 @@
     background: #ffffff;
 }
 
+.proximosEventos{
+    background-color: #000000;
+}
+
+#proximosEventosFont{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+
 #galeria{
     padding-top: 40px;
     color: rgb(0, 0, 0);

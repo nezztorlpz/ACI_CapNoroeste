@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./assets/css/bootcss/carousel.css">
     <link rel="stylesheet" href="./assets/css/bootcss/btns.css">
 
+    <link rel="stylesheet" href="./assets/css/banner.css">
+
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/sobre.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
@@ -55,10 +57,47 @@
         </div>
     </header>
 
+    <div class="carousel-overlay">
+        <h2>
+            <span class="main-text">ACI MÉXICO</span><br>
+            <span class="sub-text">Capítulo Noroeste</span>
+        </h2>
+        <button class="btn btn-custom" onclick="window.location.href='#QuienesSomos'">Conocer más</button>
+    </div>
+
+    <section class="banner"></section>
+        <!-- <div class="banner__imagen"></div> -->
+        <div class="banner__video">
+            <video autoplay muted loop>
+                <source src="./assets/img/banner_video.mp4">
+                Tu navegador no soporta el video
+            </video>
+        </div>
+
+    </section>
 
 
-    <!--BOOTSTRAP-->
-    <!-- Primer Carrusel -->
+
+    <section id="QuienesSomos" class="sobre">
+        <h2 id="sobre__titulo" class="sobre__titulo">Sobre Nosotros</h2>
+        <p id="sobre__descripcion" class="sobre__descripcion">
+            El American Concrete Institute (ACI) es una sociedad técnica y educativa, constituida sin fines de lucro
+            desde 1904, y es la principal autoridad de América y del mundo en tecnología del concreto.
+        </p>
+        <p id="sobre__descripcion" class="sobre__descripcion">
+            El ACI es un foro para la discusión de todos los asuntos relacionados con el concreto y el desarrollo de
+            soluciones a problemas con Recursos Técnicos y Programas Educativos, tanto en el Diseño, Construcción,
+            Mantenimiento y Rehabilitación, así como Materiales para el Concreto.
+        </p>
+        <div class="d-flex justify-content-center">
+            <!-- Utiliza d-flex y justify-content-center para centrar el botón -->
+            <button class="btn btn-custom" type="button" onclick="window.location.href='./sobreNosotros.html'">Conocer
+                más </button>
+        </div>
+    </section>
+
+    <section class="proximosEventos">
+        <h1 id="proximosEventosFont">Proximos Eventos</h1>
     <div id="carouselExampleIndicators" class="carousel slide first-carousel" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -67,13 +106,9 @@
                 aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
+
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./assets/img/cover.jpg" class="d-block w-100" alt="...">
-            </div>
             <div class="carousel-item active">
                 <img src="./assets/img/eventos/1.jpg" class="d-block w-100" alt="...">
             </div>
@@ -95,31 +130,13 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
-
-    <section id="QuienesSomos" class="sobre">
-        <h2 id="sobre__titulo" class="sobre__titulo">Sobre Nosotros</h2>
-        <p id="sobre__descripcion" class="sobre__descripcion">
-            El American Concrete Institute (ACI) es una sociedad técnica y educativa, constituida sin fines de lucro
-            desde 1904, y es la principal autoridad de América y del mundo en tecnología del concreto.
-        </p>
-        <p id="sobre__descripcion" class="sobre__descripcion">
-            El ACI es un foro para la discusión de todos los asuntos relacionados con el concreto y el desarrollo de
-            soluciones a problemas con Recursos Técnicos y Programas Educativos, tanto en el Diseño, Construcción,
-            Mantenimiento y Rehabilitación, así como Materiales para el Concreto.
-        </p>
-        <div class="d-flex justify-content-center">
-            <!-- Utiliza d-flex y justify-content-center para centrar el botón -->
-            <button class="btn btn-custom" type="button" onclick="window.location.href='./sobreNosotros.html'">Conocer
-                más </button>
-        </div>
-    </section>
+</section>
 
     <section class="galeria">
         <h1 id="galeria">Nuestros Socios Institucionales</h1>
         <div class="container__img">
             <div class="caja">
-                <img src="./assets/img/patrocinadores/IMG_6526_h.jpg" alt="">
+                <img src="./assets/img/patrocinadores/gcc.png" alt="">
             </div>
             <div class="caja">
                 <img src="./assets/img/galeria/IMG_6542_h.jpg" alt="">
