@@ -1,8 +1,9 @@
 .scroll__to__top {
     position: fixed;
-    bottom: 160px;
-    right: 25px;
+    bottom: 140px;
+    right: 55px;
     display: block;
+    z-index: 1000;
 }
 
 #back__to__top {
