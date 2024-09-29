@@ -1,8 +1,35 @@
-/* CSS personalizado para el botón */
+.scroll__to__top {
+    position: fixed;
+    bottom: 160px;
+    right: 25px;
+    display: block;
+}
+
+#back__to__top {
+    background-color: rgba(236, 112, 11, 0); /* Fondo transparente */
+    color: #d14545; /* Color del icono */
+    border: none;
+    border-radius: 30px; /* Ajusta el radio según desees */
+    padding: 0; /* Sin padding para que el icono esté centrado */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: all 0.1s ease-in-out; /* Transición suave */
+}
+
+#back__to__top i {
+    font-size: 40px; /* Ajusta el tamaño del icono */
+    padding-top: 2.5px; /* Ajusta según sea necesario */
+}
+
+/* Si deseas que tenga un efecto hover */
+#back__to__top:hover {
+    color: #0C7ED2; /* Cambia el color del icono al pasar el mouse */
+}
+
+/* CSS personalizado para los otros botones */
 .btn-custom {
     background-color: #FFC200; /* Color de fondo del botón */
     color: #ffffff; /* Color del texto del botón */
-    border: none; /* Eliminar el borde*/
+    border: none; /* Eliminar el borde */
 }
 
 .btn-custom:hover {

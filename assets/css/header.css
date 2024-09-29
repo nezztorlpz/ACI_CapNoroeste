@@ -91,7 +91,7 @@ header {
     right: 2rem;
     top: 60px; /* Ajusta según la altura del navbar */
     width: 300px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(31, 30, 30, 0.563);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
