@@ -5,24 +5,24 @@ footer {
 .footerContainer {
     width: 100%;
     padding: 30px 30px 0px;
-    text-align: center; /* Centrar todo el contenido dentro del footerContainer */
+    text-align: center;
     margin-top: 30px;
 }
 
 .footerLogo {
-    margin-bottom: 0px; /* Espacio debajo del logo */
+    margin-bottom: 0px; 
     padding-top: 10px;
 }
 
 .footerLogo img {
-    max-width: 200px; /* Ajusta el tamaño máximo del logo */
-    height: auto; /* Mantiene la proporción del logo */
+    max-width: 200px;
+    height: auto; 
 }
 
 .socialIcons {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px; /* Espacio debajo de los iconos de redes sociales */
+    margin-bottom: 30px; 
 }
 
 .socialIcons a {
@@ -30,17 +30,17 @@ footer {
     padding: 8px;
     margin: 8px;
     border-radius: 50%;
-    transition: color 0.5s; /* Añadir transición suave para el cambio de color */
+    transition: color 0.5s; 
 }
 
 .socialIcons a i {
-    font-size: 1.5rem; /* Tamaño del ícono */
+    font-size: 1.5rem; 
     color: rgb(255, 255, 255);
     opacity: 0.9;
 }
 
 .socialIcons a:hover i {
-    color: #0782C9; /* Cambia el color del ícono en hover */
+    color: #0782C9; 
 }
 
 .footerNav {
@@ -50,12 +50,12 @@ footer {
 .footerNav ul {
     display: flex;
     justify-content: center;
-    padding: 0; /* Elimina el padding predeterminado */
-    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; 
+    list-style: none; 
 }
 
 .footerNav ul li {
-    margin: 0 15px; /* Espacio entre los enlaces */
+    margin: 0 15px; 
 }
 
 .footerNav ul li a {

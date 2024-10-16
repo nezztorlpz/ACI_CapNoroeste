@@ -28,39 +28,33 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap; /* Permite que las imágenes se ajusten al espacio disponible */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Espacio entre las imágenes */
+    gap: 20px;
     padding: 0px 50px 20px;
-
 }
 
 .caja {
-    flex: 1 1 200px; /* Define que cada caja ocupe el mismo ancho mínimo de 200px */
-    max-width: 250px; /* Limita el ancho máximo de cada caja */
-    border-radius: 10px; /* Bordes redondeados para un diseño uniforme */
-    overflow: hidden; /* Evita que las imágenes sobresalgan */
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  Sombra para dar profundidad */
-    /*transition: transform 0.3s ease, box-shadow 0.3s ease;*/
+    flex: 1 1 200px;
+    max-width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .caja img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Asegura que la imagen mantenga su proporción sin deformarse */
+    object-fit: contain;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-
-/* Responsividad para pantallas pequeñas */
 @media (max-width: 991px) {
     .container__img {
-        gap: 15px; /* Reduce el espacio entre las imágenes en pantallas pequeñas */
+        gap: 15px;
     }
 
     .caja {
-        flex: 1 1 150px; /* Ajusta el tamaño mínimo en pantallas pequeñas */
+        flex: 1 1 150px;
         max-width: 200px;
     }
 }

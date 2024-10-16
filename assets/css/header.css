@@ -46,9 +46,9 @@ header {
 }
 
 .navbar .logo img {
-    max-height: 55px; /* Matches the height of the navbar */
-    height: auto; /* Maintains the aspect ratio */
-    width: auto; /* Optional, only if you want to set a specific max-width */
+    max-height: 55px; 
+    height: auto; 
+    width: auto; 
     padding: 5px;
 }
 
@@ -89,7 +89,7 @@ header {
 .dropdown_menu {
     position: absolute;
     right: 2rem;
-    top: 60px; /* Ajusta según la altura del navbar */
+    top: 60px; 
     width: 300px;
     background: rgba(31, 30, 30, 0.563);
     backdrop-filter: blur(15px);

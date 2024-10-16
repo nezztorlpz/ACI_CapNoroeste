@@ -34,7 +34,7 @@
 }
 
 .btn-aplicar {
-    background-color: #007bff; /* Azul corporativo */
+    background-color: #007bff; 
     color: #fff;
     padding: 12px 24px;
     font-size: 18px;
@@ -46,13 +46,13 @@
 }
 
 .btn-aplicar:hover {
-    background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
-    transform: translateY(-2px); /* Efecto de elevación al hacer hover */
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
 }
 
 .btn-aplicar:active {
-    background-color: #003f7f; /* Color al hacer clic */
-    transform: translateY(0); /* Vuelve a la posición original */
+    background-color: #003f7f; 
+    transform: translateY(0); 
 }
 
 @media (max-width: 767px) {
